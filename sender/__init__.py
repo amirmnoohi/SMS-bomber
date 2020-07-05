@@ -5,7 +5,7 @@ from .tapsi import Tapsi
 from .alibaba import Alibaba
 from .divar import Divar
 
-Status = False
+Status = True
 
 All = [
     ('snapp', Snapp(), Status | False),
@@ -13,5 +13,5 @@ All = [
     ('snapptrip', Snapptrip(), Status | False),
     ('tapsi', Tapsi(), Status | False),
     ('alibaba', Alibaba(), Status | False),
-    ('divar', Divar(), Status | True),
+    ('divar', Divar(), Status | False),
 ]
