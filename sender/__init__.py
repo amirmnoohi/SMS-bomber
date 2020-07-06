@@ -10,7 +10,7 @@ from .namava import Namava
 from .mrbilit import Mrbilit
 from .snappmarket import Snappmarket
 
-Status = False
+Status = True
 
 All = [
     ('snapp', Snapp(), Status | False),
@@ -24,5 +24,5 @@ All = [
     ('namava', Namava(), Status | False),
     ('namava', Namava(), Status | False),
     ('mrbilit', Mrbilit(), Status | False),
-    ('snappmarket', Snappmarket(), Status | True),
+    ('snappmarket', Snappmarket(), Status | False),
 ]
