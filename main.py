@@ -1,11 +1,9 @@
 from sender import *
 
-i = 0
-for service in All:
+for i in range(len(All)):
     try:
-        if service[2]:
-            resp = service[1].send("9162292949")
-            print("#" + str(i+1) + " " + service[0] + " : " + resp["message"])
+        if All[i][2]:
+            resp = All[i][1].send("9162292949")
+            print("#" + str(i + 1) + " " + All[i][0] + " : " + resp["message"])
     except:
-        print("#" + str(i+1) + " " + service[0] + " : Failed to send SMS - Exception")
-    i += 1
+        print("#" + str(i + 1) + " " + All[i][0] + " : Failed to send SMS - Exception")
