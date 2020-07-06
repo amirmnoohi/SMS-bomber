@@ -8,7 +8,7 @@ from .torob import Torob
 from .zarinpal import Zarinpal
 from .namava import Namava
 
-Status = False
+Status = True
 
 All = [
     ('snapp', Snapp(), Status | False),
@@ -19,5 +19,5 @@ All = [
     ('divar', Divar(), Status | False),
     ('torob', Torob(), Status | False),
     ('zarinpal', Zarinpal(), Status | False),
-    ('namava', Namava(), Status | True),
+    ('namava', Namava(), Status | False),
 ]
