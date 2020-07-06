@@ -15,6 +15,8 @@ List of Available sources
 |7			     |torob                         |https://torob.ir             |Active                       |
 |8			     |zarinpal                      |https://zarinpal.ir          |Active                       |
 |9			     |namava                        |https://namava.ir            |Active                       |
+|10			     |mrbilit                       |https://mribilit.com         |Active                       |
+|11			     |snappmarket                   |https://snapp.market         |Unknown                      |
 
 ## RunTime
 ![RUN GIF](https://git.noohi.org/amirmnoohi/sms-bomber/-/raw/master/img/run.gif)
