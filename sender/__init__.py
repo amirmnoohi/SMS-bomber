@@ -7,8 +7,9 @@ from .divar import Divar
 from .torob import Torob
 from .zarinpal import Zarinpal
 from .namava import Namava
+from .mrbilit import Mrbilit
 
-Status = True
+Status = False
 
 All = [
     ('snapp', Snapp(), Status | False),
@@ -20,4 +21,6 @@ All = [
     ('torob', Torob(), Status | False),
     ('zarinpal', Zarinpal(), Status | False),
     ('namava', Namava(), Status | False),
+    ('namava', Namava(), Status | False),
+    ('mrbilit', Mrbilit(), Status | True),
 ]

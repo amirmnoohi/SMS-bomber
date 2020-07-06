@@ -9,11 +9,6 @@ class Zarinpal:
         output = {'code': 200, 'message': 'SMS Sent'}
         if resp.status_code == 200:
             return output
-        elif resp.status_code == 400:
-            if resp.json()["meta"]["error_type"] == "UserOtpRateLimit":
-                output['code'] = 500
-                output['message'] = 'Failed to send SMS : SMS Time Limit'
-                return output
         else:
             payload = {"cell_number": "0" + phone_number, "first_name": "جهت", "last_name": "تست"}
             resp = requests.post(url="https://next.zarinpal.com/api/oauth/register", json=payload)
